@@ -36,7 +36,7 @@ p {
 }
 
 .top-container {
-  background-color: #EAF6F6;
+  background-image: linear-gradient(to right, #eb8242, #fcc169, #ffffdd, #ffeb99);
   position: relative;
   padding-top: 100px;
 }
@@ -46,10 +46,23 @@ p {
 }
 
 .bottom-container {
-  margin: 70px auto 0 auto;
+  margin: 0 auto 0 auto;
   background-color: #66BFBF;
   position: relative;
-  padding: 40px 0 10px;
+  padding: 20px 0 10px;
+}
+
+.hills {
+  width: 100%;
+  position: relative;
+  top: 5px;
+}
+
+.sun {
+  position:absolute;
+  right: 20rem;
+  top: 4rem;
+  width: 8rem;
 }
 
 .profile {
@@ -69,35 +82,52 @@ p {
 
 .top-cloud {
   position: absolute;
-  top: 50px;
-  right: 300px;
+  top: 150px;
+  right: 80px;
 }
 
 .bottom-cloud {
   position: absolute;
   left: 250px;
-  bottom: 300px;
+  bottom: 550px;
 }
 
 .profile-pic {
   width: 40%;
 }
 
-.samurai {
+.water-ninja {
   width: 25%;
   float: left;
   margin-right: 30px;
 }
 
-.ninja {
+.fire-ninja {
   width: 25%;
   float: right;
   margin-left: 30px;
 }
 
+.earth-ninja {
+  width: 13%;
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
 .contact-message {
   width: 40%;
   margin: 40px auto 60px;
+}
+
+.skill-link {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skill-link:hover {
+  color: #98dce8;
 }
 
 .button {
@@ -145,25 +175,15 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-decoration: none;
-  margin: 10px 20px;
+  margin: 0 20px;
   }
 
 .footer-link:hover {
   color: #EAF6F6;
 }
 
-.att {
-  color: #EAF6F6;
-  font-size: 0.60rem;
-  margin: 30px auto 0;
-}
-
-#att-link {
-  color: #11999E;
-}
-
 .copyright {
   color: #EAF6F6;
   font-size: 0.60rem;
-  margin-top: 0;
+  margin: 20px auto 0 auto;
 }
