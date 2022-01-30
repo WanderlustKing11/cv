@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #66BFBF;
   font-weight: normal;
 }
@@ -86,9 +86,17 @@ p {
 
 /* Title */
 
-.top-name {
+.top-name, .dev-title {
   position: relative;
   z-index: 2;
+}
+
+.dev-title {
+  font-size: 2rem;
+}
+
+.dev {
+  text-decoration: underline;
 }
 
 .hills {
@@ -104,23 +112,6 @@ p {
   width: 8rem;
 }
 
-.profile {
-  width: 35%;
-  margin: auto;
-}
-
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-}
-
-.dev {
-  text-decoration: underline;
-}
-
-/* Thematic Images */
-
 .top-cloud {
   position: absolute;
   top: 150px;
@@ -133,9 +124,7 @@ p {
   bottom: 50%;
 }
 
-.profile-pic {
-  width: 40%;
-}
+/* Thematic Images*/
 
 .water-ninja {
   width: 25%;
@@ -155,9 +144,21 @@ p {
   margin: 0 auto 50px auto;
 }
 
-.contact-message {
+/* Description */
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.profile-pic {
   width: 40%;
-  margin: 40px auto 60px;
+}
+
+.profile {
+  width: 55%;
+  margin: auto;
 }
 
 .skill-link {
@@ -172,6 +173,10 @@ p {
 }
 
 /* Portfolio Carousel */
+
+#portfolio-section {
+  margin: 4rem auto 2rem;
+}
 
 .carousel-image {
   max-width: 40%;
@@ -229,6 +234,11 @@ p {
   background: -webkit-gradient(linear, left top, left bottom, from(#0e7a7e), to(#0e7a7e));
   background: -moz-linear-gradient(top, #0e7a7e, #0e7a7e);
   background: linear-gradient(to bottom, #0e7a7e, #0e7a7e);
+}
+
+.contact-message {
+  width: 60%;
+  margin: 40px auto 60px;
 }
 
 /* Footer */
