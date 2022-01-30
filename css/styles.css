@@ -5,11 +5,31 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #14b8be;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #66BFBF;
+}
+
 h1 {
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
   color: #66BFBF;
+  font-weight: bold;
 }
 
 h2 {
@@ -24,6 +44,11 @@ h3 {
   color: #11999E;
 }
 
+h5 {
+  color: #b3b3b3;
+  font-family: 'Montserrat', sans-serif;
+}
+
 hr {
   border: dotted #EAF6F6 7px;
   border-bottom: none;
@@ -33,6 +58,12 @@ hr {
 
 p {
   line-height: 2;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
 }
 
 .top-container {
@@ -50,6 +81,11 @@ p {
   background-color: #66BFBF;
   position: relative;
   padding: 20px 0 10px;
+}
+
+.top-name {
+  position: relative;
+  z-index: 2;
 }
 
 .hills {
@@ -88,8 +124,8 @@ p {
 
 .bottom-cloud {
   position: absolute;
-  left: 250px;
-  bottom: 550px;
+  left: 20%;
+  bottom: 50%;
 }
 
 .profile-pic {
@@ -130,6 +166,25 @@ p {
   color: #98dce8;
 }
 
+/* Carousel */
+
+.carousel-image {
+  max-width: 40%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.aj-pic {
+  max-width: 15%;
+  border-radius: 2px;
+}
+
+#portfolio-carousel {
+  padding-bottom: 30px;
+}
+
+/* Buttons */
+
 .button {
   display: inline-block;
   text-align: center;
@@ -150,6 +205,7 @@ p {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+  margin: 5rem 2rem 1rem;
 }
 
 .button:hover,
@@ -170,16 +226,49 @@ p {
   background: linear-gradient(to bottom, #0e7a7e, #0e7a7e);
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
+
 .footer-link {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-decoration: none;
-  margin: 0 20px;
+  margin: auto 20px;
   }
 
 .footer-link:hover {
   color: #EAF6F6;
+}
+
+#linkedin-icon {
+  color: #0072b1;
+  margin-left: auto;
+}
+
+.soc-linkedin{
+  margin-left: 3px;
+}
+
+#github-icon {
+  color: white;
+}
+
+
+.soc-github {
+  margin-left: 3px;
+}
+
+#ema-icon {
+  max-height: 1.8rem;
+  border-radius: 0.2rem;
+}
+
+.soc-ema {
+  margin-left: 3px;
+  margin-right: auto;
 }
 
 .copyright {
