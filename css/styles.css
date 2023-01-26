@@ -193,6 +193,17 @@ p {
   padding-bottom: 30px;
 }
 
+.spaceinvaders {
+  object-fit:contain;
+  object-position: 0 -25px;
+  border-radius: 0;
+}
+
+.cain {
+  object-fit: contain;
+  max-width: 35%;
+}
+
 /* Buttons */
 
 .button {
